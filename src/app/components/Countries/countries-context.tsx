@@ -6,6 +6,7 @@ export type Countries = z.infer<typeof CountriesSchema>;
 
 export type CountriesContextProps = {
   data: Array<Countries>;
+  isLoading: boolean;
 };
 
 export const CountriesContext = createContext<CountriesContextProps | undefined>(undefined);
